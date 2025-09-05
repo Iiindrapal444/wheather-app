@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather in {{ weather.city }}</h1>
+        <div class="weather-card">
+            <img src="http://openweathermap.org/img/wn/{{ weather.icon }}@2x.png" alt="Weather Icon">
+            <p><strong>{{ weather.temperature }}°C</strong></p>
+            <p>Feels like: {{ weather.feels_like }}°C</p>
+            <p>Humidity: {{ weather.humidity }}%</p>
+            <p>{{ weather.description }}</p>
+        </div>
+        <br>
+        <a href="/">🔙 Back</a>
+    </div>
+</body>
+</html>
