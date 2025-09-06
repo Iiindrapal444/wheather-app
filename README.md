@@ -1,1 +1,1 @@
-"# wheather-app" 
+"# weather-app" 
